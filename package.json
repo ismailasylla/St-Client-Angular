@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --proxy-config proxy.conf.json",
+    "start": "ng serve",
+    "proxy": "http://localhost:8000/api",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",

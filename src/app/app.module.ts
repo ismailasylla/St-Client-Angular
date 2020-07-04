@@ -16,6 +16,7 @@ const routes: Route[] = [
   { path: 'student', component: StudentComponent },
   { path: 'student-list', component: StudentListComponent },
   { path: 'form', component: FormComponent },
+  // { path: 'list', component: StudentListComponent },
   // { path: 'form:/id', component: FormComponent },
 ];
 
@@ -29,7 +30,9 @@ const routes: Route[] = [
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(routes),
+    RouterModule.forRoot(routes, {
+      paramsInheritanceStrategy: 'always',
+    }),
     HttpClientModule,
     FormsModule,
   ],
