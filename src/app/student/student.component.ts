@@ -10,7 +10,6 @@ import { Student } from '../interfaces/student';
 export class StudentComponent implements OnInit {
   @Input() student: Student;
   students: Student[];
-  // students: Student[];
   constructor(private studentService: StudentsService) {}
 
   // ngOnInit() {
@@ -22,9 +21,9 @@ export class StudentComponent implements OnInit {
   ngOnInit() {
     this.studentService.getStudents().subscribe((students) => {
       (students) => {
-        this.students = students.json();
-
         Array.of(this.students);
+        this.students = students.json();
+        this.students = students;
       };
       console.log(students);
     });
