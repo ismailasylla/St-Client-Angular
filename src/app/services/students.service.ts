@@ -1,11 +1,13 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Observable } from 'rxjs';
-import { Student } from '../interfaces/student';
+import { Observable, throwError } from 'rxjs';
+import { catchError, retry } from 'rxjs/operators';
+import { Student } from '../interfaces/Student';
 
 const httpOptions = {
   headers: new HttpHeaders({
     'Content-Type': 'application/json',
+    header: 'Access-Control-Allow-Origin: *',
   }),
 };
 

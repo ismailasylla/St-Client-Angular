@@ -4,7 +4,6 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "proxy": "http://localhost:8000/api",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",

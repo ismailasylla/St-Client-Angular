@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Student } from '../interfaces/student';
 import { StudentsService } from '../services/students.service';
 import { ActivatedRoute } from '@angular/router';
 

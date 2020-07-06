@@ -9,23 +9,20 @@ import { FormComponent } from './form/form.component';
 import { HttpClientModule } from '@angular/common/http';
 import { Route, RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
-import { StudentComponent } from './student/student.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Route[] = [
-  { path: '', component: StudentComponent },
-  { path: 'student', component: StudentComponent },
+  { path: '', component: HomeComponent },
   { path: 'student-list', component: StudentListComponent },
   { path: 'form', component: FormComponent },
-  // { path: 'list', component: StudentListComponent },
-  // { path: 'form:/id', component: FormComponent },
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
     StudentListComponent,
-    StudentComponent,
     FormComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
