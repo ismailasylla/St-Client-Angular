@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { Route, RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 const routes: Route[] = [
   { path: '', component: HomeComponent },
@@ -32,6 +33,7 @@ const routes: Route[] = [
     }),
     HttpClientModule,
     FormsModule,
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

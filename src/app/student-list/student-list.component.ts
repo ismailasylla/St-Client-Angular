@@ -8,7 +8,6 @@ import { StudentsService } from '../services/students.service';
   styleUrls: ['./student-list.component.css'],
 })
 export class StudentListComponent implements OnInit {
-  @Input() student: Student;
   students: Student[];
 
   constructor(private studentService: StudentsService) {}
